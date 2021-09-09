@@ -1,0 +1,142 @@
+body{
+    background-color: hsl(233, 47%, 7%);
+    color:#FFF;
+    font-family: 'Inter', sans-serif;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    font-size: 20px;
+  
+}
+h1{
+    color: hsla(0, 0%, 100%, 1);
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.container{
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10%; 
+    border-radius: 5px;
+    
+}
+
+.image-section{
+    background-color: hsl(277, 64%, 61%);
+    margin: 0;
+    width: 50%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+img{
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.insights-section{
+   width : 50%;
+   padding: 50px 75px 25px 75px;
+   display: flex;
+   flex-wrap: wrap;
+   /* align-content: space-between; */
+}
+
+.description{
+    text-align: left;
+    width: 100%;
+    height:auto;
+}
+.features{
+    
+    display: flex;   
+    justify-content: space-between;
+    width: 100%;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    font-size: 20px;
+    
+}
+
+.feature-titile{
+   
+    font-weight: 900;
+    color: hsla(0, 0%, 100%, 1);
+    font-size: 40px;
+}
+.colored-text{
+    color: hsl(277, 64%, 61%);
+}
+.mobile-img{
+    display: none;
+}
+
+/* **************************************************************** */
+@media (max-width: 400px){
+
+
+    p{
+        font-size: 12px;
+    }
+    h1{
+        font-size: 18px;
+    }
+    .container{
+        flex-direction: column;
+        margin: 75px 10px;
+    }
+    .image-section{
+        width: 100%;
+        /* height: 250px; */
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    img{
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    .insights-section{
+        width: 100%;
+        padding:20px 0;
+        text-align: center;
+        flex-direction: column;
+        flex-wrap:nowrap;
+        align-content: center;
+
+    }
+    .description{
+        text-align: center;
+        width: 85%;
+        margin: auto;
+    }
+    .features{
+        display: flex;   
+        flex-direction:column;
+        justify-content: space-around;
+        font-size: 12px;
+    }
+    .feature-titile{
+        font-size: 18px;
+    }
+    .features-box{
+        margin-top: 20px;
+    }
+    .mobile-img{
+        display:block;
+    }
+    .desktop-img{
+        display: none;
+    }
+   
+}
